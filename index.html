@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js"></script>
     <title>Lousa Kanban</title>
 </head>
 <body>
     <div class="kanban">
-        <div class="kanban__column">
-            <div class="kanban__column-title">A começar</div>
-            <div class="kanban__items"></div>
-            <button class="kanban__add-item" type="button"></button>
+        <div class="kanban__coluna">
+            <div class="kanban__coluna-titulo">Para começar</div>
+            <div class="kanban__itens">
+                <div contenteditable class="kanban__item-entrada">Lavar os pratos</div>
+                <div class="kanban__arraste"></div>
+            </div>
+            <button class="kanban__add-item" type="button">Adicionar</button>
         </div>
     </div>
-    <script src="js/main.js"></script>
 </body>
 </html>

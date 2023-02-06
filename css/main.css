@@ -1,0 +1,65 @@
+:root {
+    --azul: #2a3773;
+    --azulescuro: #1e2852;
+}
+
+body {
+    background-color: var(--azulescuro);
+}
+
+.kanban {
+    display: flex;
+    padding: 30px;
+    width: 750px;
+    background: var(--azul);
+    border-radius: 5px;
+}
+
+.kanban * {
+    font-family: sans-serif;
+}
+
+.kanban__coluna {
+    flex: 1;
+}
+
+.kanban__coluna:not(:last-child) {
+    margin-right: 30px;
+}
+
+.kanban__coluna-titulo {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.kanban__item-entrada {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kanban__arraste {
+    height: 10px;
+    transition: background 0.15s, height 0.15s;
+}
+
+.kanban__arraste--ativo {
+    height: 20px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
