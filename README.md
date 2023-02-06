@@ -1,15 +1,4 @@
-# Kanban Board Simples
-
-`Projeto pessoal de aprendizado`
-
-# Documentação
-
-- <li><a href="docs/">-</a></li>
-
-# Armazenamento do Código-Fonte
-
--<li><a href="src/"> Código fonte</a></li>
-
+# Lousa Kanban
+Projeto pessoal para aprendizado.
 # Publicação
-
-- Github Pagess
+Github Pages
