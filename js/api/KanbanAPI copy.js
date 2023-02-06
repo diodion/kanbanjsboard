@@ -21,7 +21,7 @@ export default class KanbanAPI {
             throw new Error ("Coluna inexistente.");
         }
 
-        column.items.push(item);
+        column.item.push(item);
         save(data);
 
         return item;
