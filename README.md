@@ -1,4 +1,4 @@
 # Lousa Kanban
 Projeto pessoal para aprendizado.
 # Publicação
-Github Pages
+[GitHub Pages](https://diodion.github.io/kanbanjsboard/).
