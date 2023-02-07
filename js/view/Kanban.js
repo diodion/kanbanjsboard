@@ -1,4 +1,4 @@
-import Column from "./column.js";
+import Column from "./Column.js";
 
 export default class Kanban {
     constructor (root) {
