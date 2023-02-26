@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <title>Modal</title>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open modal</button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="true"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Adicionar nova tarefa</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="input-tarefa">Nome da Tarefa</label>
+                            <input type="text" class="form-control" id="input-tarefa"
+                                placeholder="Insira o nome da sua tarefa.">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-tarefa_desc">Descrição da tarefa</label>
+                            <input type="text" class="form-control" id="input-tarefa_desc"
+                                placeholder="Fale sobre a tarefa.">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="input-data_inicio">Data Inicial</label>
+                                <input type="date" class="form-control" id="input-data_inicio"
+                                    placeholder="Data inicial">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="input-data_fim">Data Final</label>
+                                <input type="date" class="form-control" id="input-data_fim" placeholder="Data final">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-proprietario">Proprietário:</label>
+                            <input list="input-proprietarios" name="input-proprietario" id="input-proprietario">
+                            <datalist id="input-proprietarios">
+                                <option value="João">
+                                <option value="Edmundo">
+                                <option value="Romário">
+                                <option value="Daniel">
+                                <option value="Rafael">
+                                <option value="Diego">
+                                <option value="Amanda">
+                                <option value="Celio">
+                            </datalist>
+                            <input type="submit">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-prioridade">Prioridade</label>
+                            <input list="input-prioridades" name="input-prioridade" id="input-prioridade">
+                            <datalist id="input-prioridades">
+                                <option value="Alta">
+                                <option value="Média">
+                                <option value="Baixa">
+                                <option value="Urgente">
+                            </datalist>
+                            <input type="submit">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-tag">Tag:</label>
+                            <input list="input-tags" name="input-tag" id="input-tag">
+                            <datalist id="input-tags">
+                                <option value="CRM Correios">
+                                <option value="Caixa Mercado Gula">
+                                <option value="Database Casas Bahia">
+                                <option value="Website Boticario ">
+                                <option value="Javascript">
+                                <option value="Java">
+                                <option value="C++">
+                                <option value="Python">
+                            </datalist>
+                            <input type="submit">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="input-adicionar">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
